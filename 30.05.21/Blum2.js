@@ -83,8 +83,8 @@ for (i=0; i<(arrBlum.length-1); i++){
         }
     }
 }
-console.log("result : ");
-console.log(result);
+//console.log("result : ");
+//console.log(result);
 // console.log("count : ");
 // console.log(result.length);
 console.log("count : ");
