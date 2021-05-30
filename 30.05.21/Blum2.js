@@ -73,12 +73,12 @@ console.log(arrBlum.length);
 var result=[];
 var count=0;
 for (i=0; i<(arrBlum.length-1); i++){
-	if (arrBlum.length *2 > N) break;
+	if (arrBlum[i] *2 > N) break;
     for (j=i+1; j<(arrBlum.length); j++){
         let sumIndex = arrBlum[i] + arrBlum[j];
         if (sumIndex > N) continue;
         if (checkBlum[sumIndex]==1){
-            result.push([arrBlum[i], arrBlum[j]]);
+            //result.push([arrBlum[i], arrBlum[j]]);
             count++;
         }
     }
