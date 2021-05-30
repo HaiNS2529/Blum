@@ -21,6 +21,10 @@ for ( i=2; i<=n2; i++){
         arrPrime.push(i);
     }
 }
+console.log("arrayPrime : ");
+console.log(arrPrime);
+console.log("lengthPrime : ");
+console.log(arrPrime.length);
 for (i=0; i<N; i++) { checkBlum[i]=0; }
 for (i=0; i< arrPrime.length-1; i++){
     for (j=i+1; j<arrPrime.length; j++){
@@ -74,16 +78,17 @@ for (i=0; i<(arrBlum.length-1); i++){
         let sumIndex = arrBlum[i] + arrBlum[j];
         if (sumIndex > N) continue;
         if (checkBlum[sumIndex]==1){
-            //result.push([arrBlum[i], arrBlum[j]]);
+            result.push([arrBlum[i], arrBlum[j]]);
             count++;
         }
     }
 }
-// console.log("result : ");
-// console.log(result);
+console.log("result : ");
+console.log(result);
 // console.log("count : ");
 // console.log(result.length);
 console.log("count : ");
 console.log(count);
-var end = performance.now()
+var end = performance.now();
+console.log("Thoi gian chay(ms) : ");
 console.log(end-start);
